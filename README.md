@@ -23,31 +23,4 @@ The encrypted message is sent to Bob.
 Bob receives the encrypted message and uses his private key to decrypt it.
 Bob reads the decrypted message.
 
-  +----------+     Generate message     +------------+
-  |  Alice   |------------------------>|   Bob      |
-  +----------+                         +------------+
-                                               |
-  +----------+   Encrypt message      +------------+
-  |  Alice   |------------------------>|   Bob      |
-  +----------+      using Bob's       +------------+
-                  public key (Kp)            |
-                                               |
-  +----------+                         +------------+
-  |  Alice   |                         |   Bob      |
-  +----------+                         +------------+
-                                               |
-                                     Receive encrypted message
-                                               |
-  +----------+                         +------------+
-  |  Alice   |                         |   Bob      |
-  +----------+                         +------------+
-                                               |
-                                    Decrypt message
-                                               |
-  +----------+                         +------------+
-  |  Alice   |                         |   Bob      |
-  +----------+      using Bob's       +------------+
-                  private key (Ks)            |
-                                               |
-                                      Read decrypted message
-                                               |
+  ![image](https://user-images.githubusercontent.com/117555665/208232644-730f1acc-b0a9-431a-9a93-3e23f0c5ce20.png)
